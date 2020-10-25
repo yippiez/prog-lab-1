@@ -14,7 +14,8 @@ typedef struct Nokta
 {
     float x;
     float y;
-} nokta;
+} point;
+
 
 typedef struct Daire
 {
@@ -51,7 +52,6 @@ int isall_inside(int n, nokta *liste, daire c)
         if (uzunluk(c.merkez, liste[i]) > c.r)
             return 0;
     }
-
     return 1;
 }
 
